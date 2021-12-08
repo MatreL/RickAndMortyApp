@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const rickAndMortyServices = (function () {
-  const urlAllCharacters = "https://rickandmortyapi.com/api/";
+  const urlAllCharacters = "https://rickandmortyapi.com/api";
 
   const getAll = async (page = 1) => {
     const response = await axios.get(

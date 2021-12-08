@@ -1,6 +1,6 @@
 import React, {FC, createContext, useState, useEffect} from "react";
 import {ICharacter } from "../interfaces/ICharacter"
-import { RickAndMortyContextType } from "../types/RickAndMortyContextType";
+import { RickAndMortyContextType } from "../types/ProjectType";
 import { rickAndMortyServices } from "../service/RickAndMortyService";
 import { ILocations } from "../interfaces/ILocations";
 

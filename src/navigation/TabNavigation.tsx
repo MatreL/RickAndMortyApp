@@ -1,8 +1,8 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react'
 import {FontAwesome5} from "@expo/vector-icons"
-import SearchNavigation from './SearchNavigation';
-import { LocationNavigator } from './SearchNavigation';
+import CharacterNavigation from './CharacterNavigation';
+import { LocationNavigator } from './CharacterNavigation';
 
 export type RootTabParamList = {
     CharacterList: undefined;
@@ -22,7 +22,7 @@ export default function TabNavigation() {
           }}>
             <Tab.Screen 
             name="CharacterList" 
-            component={SearchNavigation} 
+            component={CharacterNavigation} 
             options={{tabBarIcon: ({color, size}) => 
             <FontAwesome5 name="list" size={size} color={color} />}}/>
             <Tab.Screen 

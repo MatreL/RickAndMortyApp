@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { RickAndMortyContext } from "../../context/RickAndMortyContext";
-import { RickAndMortyContextType } from "../../types/RickAndMortyContextType";
+import { RickAndMortyContextType } from "../../types/ProjectType";
 import { ICharacter } from "../../interfaces/ICharacter";
 import CharaterItem from "./CharacterItem";
 import {
@@ -21,10 +21,6 @@ const CharaterList = () => {
 
   const [characterList, setCharacterList] = useState<ICharacter[]>();
 
-  useEffect(() => {
-    setCharacterList(characters);
-  }, []);
-
   const [query, setQuery] = useState("");
 
   const handleSearch = (text: string) => {
@@ -34,6 +30,11 @@ const CharaterList = () => {
     setQuery(text);
     setCharacterList(filteredList);
   };
+
+  useEffect(() => {
+    setCharacterList(characters);
+  }, [characters]);
+
   return (
     <View style={styles.list}>
       <TextInput
@@ -42,8 +43,8 @@ const CharaterList = () => {
         clearButtonMode="always"
         value={query}
         onChangeText={(queryText) => handleSearch(queryText)}
-        placeholder="Search on name to see character!"
-        style={{ backgroundColor: "#fff", paddingHorizontal: 20 }}
+        placeholder="Search on name"
+        style={{ backgroundColor: "#fff", paddingHorizontal: 20, height: 50 }}
       />
 
       {characterList && (

@@ -1,7 +1,7 @@
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import React from "react";
 import { SafeAreaView, Text, StyleSheet, Image } from "react-native";
-import { RootStackParamList } from "../navigation/SearchNavigation";
+import { RootStackParamList } from "../navigation/CharacterNavigation";
 
 const DetailLocationScreen = ({
   route,

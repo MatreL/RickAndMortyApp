@@ -1,5 +1,5 @@
 import React from "react";
-import { RootStackParamList } from "../navigation/SearchNavigation";
+import { RootStackParamList } from "../navigation/CharacterNavigation";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RickAndMortyProvider } from "../context/RickAndMortyContext";
 import CharaterList from "../components/character/CharacterList";

@@ -18,7 +18,7 @@ export type RootStackParamList = {
   };
   }
 
-export default function SearchNavigation() {
+export default function CharacterNavigation() {
     const Stack = createNativeStackNavigator<RootStackParamList>();
     return (
         <Stack.Navigator 

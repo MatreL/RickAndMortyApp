@@ -3,7 +3,7 @@ import { View, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { ILocations } from "../../interfaces/ILocations";
 import LocationItem from "./LocationItem";
-import { RickAndMortyContextType } from "../../types/RickAndMortyContextType";
+import { RickAndMortyContextType } from "../../types/ProjectType";
 import { RickAndMortyContext } from "../../context/RickAndMortyContext";
 
 const LocationList = () => {
