@@ -1,10 +1,10 @@
 import React, {FC, createContext, useState, useEffect} from "react";
 import {ICharacter } from "../interfaces/ICharacter"
-import { RickAndMortyContextType } from "../types/ProjectType";
+import { ProjectType } from "../types/ProjectType";
 import { rickAndMortyServices } from "../service/RickAndMortyService";
 import { ILocations } from "../interfaces/ILocations";
 
-export const RickAndMortyContext = createContext<RickAndMortyContextType | null>(null);
+export const RickAndMortyContext = createContext<ProjectType | null>(null);
 
 export const RickAndMortyProvider : FC = ({children}) => {
 

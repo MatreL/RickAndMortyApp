@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { RickAndMortyContext } from "../../context/RickAndMortyContext";
-import { RickAndMortyContextType } from "../../types/ProjectType";
+import { ProjectType } from "../../types/ProjectType";
 import { ICharacter } from "../../interfaces/ICharacter";
 import CharaterItem from "./CharacterItem";
 import {
@@ -16,7 +16,7 @@ import { rickAndMortyServices } from "../../service/RickAndMortyService";
 const CharaterList = () => {
   const { characters } = useContext(
     RickAndMortyContext
-  ) as RickAndMortyContextType;
+  ) as ProjectType;
   const navigation = useNavigation();
 
   const [characterList, setCharacterList] = useState<ICharacter[]>();
